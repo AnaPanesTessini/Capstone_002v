@@ -107,7 +107,7 @@ Workflows complementarios:
 - El 100 % de las pruebas del CI aprobadas.
 - Ruff y Mypy sin errores.
 - Sin secretos detectados.
-- **Meta de cobertura** (D17 y especificación de entorno): 80 % global y 95 % en los módulos de seguridad (autenticación, middleware RLS, guardas comerciales y sellado de auditoría). Es el ticket KC-QA-10-6, asignado al rol QA2. `[PENDIENTE: medir la cobertura actual con make test]`
+- **Meta de cobertura** (D17 y especificación de entorno): 80 % global y 95 % en los módulos de seguridad (autenticación, middleware RLS, guardas comerciales y sellado de auditoría). Es el ticket KC-QA-10-6, asignado al rol QA2. Medición al 30-10-2026: **89,7 %** en `packages/testing` (ver *Resultados de Pruebas*); los módulos de seguridad de `core` aún no se miden.
 
 ## 7. Gestión de defectos
 
@@ -118,8 +118,8 @@ Cada defecto detectado se registra como *issue* o tarjeta en el tablero, con el 
 | Rol (Plan Scrum 5) | Responsabilidad en este plan | Integrante |
 |---|---|---|
 | QA2 · Pruebas de backend y datos | Núcleo, RLS, migraciones, contrato y cobertura | Luis Ibáñez |
-| `[PENDIENTE: rol]` | `[PENDIENTE]` | Alejandro González |
-| `[PENDIENTE: rol]` | `[PENDIENTE]` | Ana Panes |
+| QA1 · Infraestructura, SRE y CI/CD | Entornos de prueba, workflows, sandbox, carga y release | Alejandro González |
+| QA3 · Motor de pruebas IA y E2E | Generación de pruebas, E2E del portal, selectores y accesibilidad | Ana Panes |
 
 ## 9. Documentos relacionados
 

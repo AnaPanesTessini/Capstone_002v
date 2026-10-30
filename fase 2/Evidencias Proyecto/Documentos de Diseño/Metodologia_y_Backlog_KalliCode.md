@@ -49,9 +49,9 @@ El equipo, que había elegido el proyecto por su foco en calidad y CI/CD, quedó
 
 | Rol (backlog v4) | Foco | Integrante | Tickets / SP asignados en v4 |
 |---|---|---|---|
-| QA1 · Lead Infra / SRE y CI-CD | Contenedores, workflows, carga, caos, release | `[PENDIENTE: confirmar]` Alejandro González | 20 / 104 SP |
+| QA1 · Lead Infra / SRE y CI-CD | Contenedores, workflows, carga, caos, release | Alejandro González | 20 / 104 SP |
 | QA2 · Backend, Seguridad y Datos QA | Aislamiento RLS, contratos, BD, WORM | Luis Ibáñez | 20 / 92 SP |
-| QA3 · Motor de pruebas IA y E2E | gen_tests, Playwright, selectores, accesibilidad | `[PENDIENTE: confirmar]` Ana Panes | 32 / 159 SP |
+| QA3 · Motor de pruebas IA y E2E | gen_tests, Playwright, selectores, accesibilidad | Ana Panes | 32 / 159 SP |
 
 **Nota:** en CoreStream, Luis tiene asignados 9 tickets, entre ellos **KC-QA-B6-08**, que en el backlog v4 figuraba como de QA1. Las asignaciones se ajustaron después del backlog. `[PENDIENTE: registrar la reasignación vigente]`
 

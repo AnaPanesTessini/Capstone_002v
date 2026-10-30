@@ -3,7 +3,7 @@
 **Versión de la base de datos:** `kallicode-backend`, rama `develop`, commit `f04519f`
 **Fecha:** 28-10-2026 · **Responsable:** Luis Ibáñez (QA2)
 
-**Método.** Se aplicaron los scripts reales del repositorio (`db/00..05.sql` y las 37 migraciones de `db/migrations/`, con los mismos roles que usa `make db`) sobre un PostgreSQL 16 con pgvector y pg_partman. Los diagramas se generaron leyendo el catálogo de esa base (`pg_class`, `pg_attribute`, `pg_constraint`). **Ninguna tabla, columna ni relación se dibujó a mano.**
+**Método.** Se aplicaron los scripts reales del repositorio (`db/00..05.sql` y las 31 migraciones versionadas de `db/migrations/`, con los mismos roles que usa `make db`) sobre un PostgreSQL 16 con pgvector y pg_partman. Los diagramas se generaron leyendo el catálogo de esa base (`pg_class`, `pg_attribute`, `pg_constraint`). **Ninguna tabla, columna ni relación se dibujó a mano.**
 
 ## 1. Visión general de la base de datos
 

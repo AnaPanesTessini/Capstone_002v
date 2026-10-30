@@ -98,6 +98,19 @@ Los usuarios de prueba del tenant `org_demo` están descritos en el `README.md` 
 | `make lint` / `make ci` | Controles de calidad (Ruff, Mypy) |
 | `make mutation-codemapping` | Pruebas de mutación de CodeMapping con mutmut; umbral ≥ 90 % de mutantes muertos. Solo Linux/macOS/WSL |
 
+### Ejecutar la suite de pruebas del Equipo 5 en local
+
+La suite de `packages/testing` necesita **tres condiciones** que `make up` y `make db` no dejan listas. Sin ellas aparecen falsos fallos: en la primera corrida del 30-10-2026, 17 pruebas fallaron solo por entorno (hallazgo H-08):
+
+```bash
+set -a; source .env; set +a                     # 1. Exportar el .env: `uv run pytest` no lo carga solo (make sí)
+make db KC_DB_NAME=kallicode_test               # 2. Crear la base de pruebas separada (KC_DATABASE_URL apunta a ella)
+docker build -t kallicode-test-runner -f packages/testing/Dockerfile.runner .   # 3. Imagen del sandbox (el CI la construye)
+uv run pytest packages/testing/tests -v --junitxml=resultados_pytest.xml
+```
+
+Resultado de referencia (commit `3a0a9e6`): **62 de 62 aprobadas** y cobertura del 89,7 % en `packages/testing`.
+
 En GitHub Actions corren cuatro workflows: `ci.yml`, `contrato.yml` (pruebas de contrato OpenAPI con schemathesis), `security_scan.yml` e `indices_nocturno.yml`.
 
 ## 7. Detener y limpiar
